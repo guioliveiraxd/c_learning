@@ -4,6 +4,10 @@ int main()
 {
     float largura = 0;
     float altura = 0;
+    float valormetroquadrado = 0;
+
+    printf("Digite o valor do metro quadrado:\n");
+    scanf("%f", &valormetroquadrado);
 
     printf("Digite a Largura do Terreno:\n");
     scanf("%f", &largura);
@@ -12,9 +16,11 @@ int main()
     scanf("%f", &altura);
 
     float area = largura * altura;
+    float valorterreno = valormetroquadrado * area;
 
-    printf("A area do terreno eh:%.2f", area);
-    
+    printf("Area do terreno:%.2f\n", area);
+    printf("Valor terreno:%.2f", valorterreno);
+
   
    return 0;
 }
