@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+        char entrada[100];
+        int numerodofuncionario;
+        float horastrab;
+        double recebidohora;
+        
+        printf("Digite o numero do funcionario:\n");
+        fgets(entrada, sizeof(entrada), stdin);
+        numerodofuncionario=atof(entrada);
+        
+        
+        printf("Quantas horas ele trabalhou no mes?:\n");
+        fgets(entrada, sizeof(entrada), stdin);
+        horastrab=atof(entrada);
+        
+        
+        printf("Quanto ele ganha por hora?: \n");
+        fgets(entrada, sizeof(entrada), stdin);
+        recebidohora=atof(entrada);
+        
+        float salario = horastrab * recebidohora;
+        
+        printf("NUMBER = %d\n", numerodofuncionario);
+        printf("SALARY =  U$ %.2f\n", salario);
+        
+        
+        
+    return 0;
+}
