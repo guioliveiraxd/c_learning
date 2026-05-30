@@ -4,7 +4,7 @@
 int main() {
         char entrada[100];
         int numerodofuncionario;
-        float horastrab;
+        double horastrab;
         double recebidohora;
         
         printf("Digite o numero do funcionario:\n");
@@ -21,7 +21,7 @@ int main() {
         fgets(entrada, sizeof(entrada), stdin);
         recebidohora=atof(entrada);
         
-        float salario = horastrab * recebidohora;
+        double salario = horastrab * recebidohora;
         
         printf("NUMBER = %d\n", numerodofuncionario);
         printf("SALARY =  U$ %.2f\n", salario);
